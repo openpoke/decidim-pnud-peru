@@ -4,35 +4,39 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-gem "decidim", "0.31.0"
-# gem "decidim-ai", "0.31.0"
-# gem "decidim-collaborative_texts", "0.31.0"
-# gem "decidim-conferences", "0.31.0"
-# gem "decidim-demographics", "0.31.0"
-# gem "decidim-design", "0.31.0"
-# gem "decidim-elections", "0.31.0"
-# gem "decidim-initiatives", "0.31.0"
-# gem "decidim-templates", "0.31.0"
+DECIDIM_VERSION = { github: "decidim/decidim", branch: "release/0.31-stable" }.freeze
+
+gem "decidim", DECIDIM_VERSION
+gem "decidim-initiatives", DECIDIM_VERSION
+
+gem "decidim-decidim_awesome", github: "decidim-ice/decidim-module-decidim_awesome", branch: "release/0.31-stable"
+gem "decidim-pokecode", github: "openpoke/decidim-module-pokecode", branch: "release/0.31-stable"
+gem "decidim-term_customizer", github: "openpoke/decidim-module-term_customizer", branch: "release/0.31-stable"
 
 gem "bootsnap", "~> 1.3"
+gem "deface"
+gem "puma"
 
-gem "puma", ">= 6.3.1"
+gem "aws-sdk-s3" # , require: false
+gem "rails_semantic_logger"
+gem "sentry-rails"
+gem "sentry-ruby"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 
-  gem "brakeman", "~> 7.0"
-  gem "decidim-dev", "0.31.0"
+  gem "brakeman"
+  gem "decidim-dev", DECIDIM_VERSION
   gem "net-imap", "~> 0.5.0"
   gem "net-pop", "~> 0.1.1"
 end
 
 group :development do
-  gem "letter_opener_web", "~> 2.0"
-  gem "listen", "~> 3.1"
-  gem "web-console", "~> 4.2"
+  gem "letter_opener_web"
+  gem "web-console"
 end
-gem "sidekiq"
 
 group :production do
+  gem "sidekiq"
+  gem "sidekiq-cron"
 end
