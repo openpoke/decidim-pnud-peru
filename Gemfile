@@ -40,3 +40,5 @@ group :production do
   gem "sidekiq"
   gem "sidekiq-cron"
 end
+
+gem "activerecord-postgis-adapter", "~> 10.0"
