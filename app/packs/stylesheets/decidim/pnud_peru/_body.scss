@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'menlo';
+  src: url('fonts/Menlo.ttc') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'monumentGroteskBlack';
+  src: url('fonts/MonumentGrotesk-Black.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'monumentGroteskMedium';
+  src: url('fonts/MonumentGrotesk-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'monumentGroteskBold';
+  src: url('fonts/MonumentGrotesk-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'monumentGroteskRegular';
+  src: url('fonts/MonumentGrotesk-Mono.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'monumentGroteskRegular', 'menlo', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'monumentGroteskBold', 'menlo', sans-serif;
+}
