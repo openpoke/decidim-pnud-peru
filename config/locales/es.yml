@@ -1,0 +1,9 @@
+en:
+  hello: "Hola mundo"
+  decidim:
+    participatory_processes:
+      pages:
+        home:
+          highlighted_processes:
+            active_spaces: Conoce nuestras iniciativas
+            see_all_spaces: Ver más

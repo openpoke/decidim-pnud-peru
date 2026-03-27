@@ -34,9 +34,14 @@
 }
 
 body {
-  font-family: 'monumentGroteskRegular', 'menlo', sans-serif;
+  font-family: 'monumentGroteskRegular', 'menlo', sans-serif !important;
+  background: #5E95D6;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'monumentGroteskBold', 'menlo', sans-serif;
+h1 {
+  font-family: 'monumentGroteskBold', 'menlo', sans-serif !important;
+}
+
+a.home__menu-element--link {
+  font-family: 'menlo', sans-serif !important;
 }

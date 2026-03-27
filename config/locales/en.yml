@@ -29,3 +29,10 @@
 
 en:
   hello: "Hello world"
+  decidim:
+    participatory_processes:
+      pages:
+        home:
+          highlighted_processes:
+            active_spaces: Meet our initiatives
+            see_all_spaces: See more

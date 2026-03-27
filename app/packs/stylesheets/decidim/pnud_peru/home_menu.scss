@@ -1,0 +1,11 @@
+#home__menu::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+  background-image: url('images/banner_pnud.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
