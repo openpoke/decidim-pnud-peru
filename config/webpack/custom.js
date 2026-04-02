@@ -60,6 +60,7 @@ module.exports = {
           /\.eot$/,
           /\.otf$/,
           /\.ttf$/,
+          /\.ttc$/,
           /\.woff$/,
           /\.woff2$/,
           /\.svg$/
