@@ -1,8 +1,23 @@
+#home__menu {
+  padding-bottom: unset;
+
+  &::after {
+    content: '';
+    display: block;
+    margin-top: 10px;
+
+    width: 100%;
+    aspect-ratio: 2792 / 412;
+
+    background-image: url('images/banner_pnud.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
 .hero__container {
-  background-image: var(--hero-image) !important;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-image: url("images/banner_pnud.png")!important;
 }
 
 .hero {

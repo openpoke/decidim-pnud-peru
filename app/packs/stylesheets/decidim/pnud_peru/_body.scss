@@ -45,3 +45,16 @@ body {
 a.home__menu-element--link {
   font-family: 'menlo', sans-serif !important;
 }
+
+a.button.button__secondary {
+  text-transform: uppercase;
+  border-radius: 9999px 9999px 9999px 9999px;
+
+  &::before {
+    content: '';
+    mask: url(images/flecha.svg) no-repeat center / contain;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+  }
+}
