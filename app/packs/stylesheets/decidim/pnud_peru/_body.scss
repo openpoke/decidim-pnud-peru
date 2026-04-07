@@ -42,6 +42,37 @@ body {
 //   font-family: 'monumentGroteskBold', 'menlo', sans-serif !important;
 // }
 
+main.home {
+  background-image: url('images/comunidad_redpublica.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 50% auto;
+
+  @media (max-width: 481px) {
+    background-size: 90% auto;
+  }
+
+  @media (max-width: 767px) {
+    background-size: 80% auto;
+  }
+
+  @media (max-width: 1280px) {
+    background-size: 70% auto;
+  }
+
+  &:last-child {
+    padding-bottom: 30em;
+
+    @media (max-width: 480px) {
+      padding-bottom: 10em;
+    }
+
+    @media (max-width: 1280px) {
+      padding-bottom: 15em;
+    }
+  }
+}
+
 a.home__menu-element--link {
   font-family: 'menlo', sans-serif !important;
 }
@@ -58,3 +89,95 @@ a.button.button__secondary {
     height: 24px;
   }
 }
+
+section.content-block, section.home__section {
+  h2.home__section-title, div.content-block__title > h2.h2 {
+    font-weight: normal;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  a.button.button__sm {
+    background-color: black;
+    color: white;
+    border-radius: 9999px 9999px 9999px 9999px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+
+    &::before {
+      content: '';
+      mask: url(images/flecha.svg) no-repeat center / contain;
+      background-color: white;
+      width: 24px;
+      height: 24px;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+}
+
+.participatory-space__block-grid {
+  a[id^="participatory_process"] {
+    div.card__grid-text {
+      h3 {
+        background-color: black;
+        color: white;
+        border-radius: 9999px 9999px 9999px 9999px;
+
+        &::before {
+          content: '';
+          mask: url(images/flecha.svg) no-repeat center / contain;
+          background-color: white;
+          width: 24px;
+          height: 24px;
+          margin-right: 8px;
+        }
+      }
+      .card__grid-metadata {
+        display: none;
+      }
+    }
+  }
+}
+
+.redpublica-title {
+  @apply font-bold text-white;
+  font-size: 10em;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    background-image: url(images/escarapela_blanca.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 64px;
+    height: 64px;
+    background-color: white;
+  }
+
+}
+.exclamation-marks {
+  &:before {
+    content: "";
+    display: inline-block;
+    mask: url(images/exclamacion_izquierda.png) no-repeat center / contain;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+  }
+
+  &:after {
+    content: "";
+    display: inline-block;
+    mask: url(images/exclamacion_derecha.png) no-repeat center / contain;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+  }
+}
+
