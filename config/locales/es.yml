@@ -1,5 +1,4 @@
 en:
-  hello: "Hola mundo"
   decidim:
     participatory_processes:
       pages:
@@ -7,3 +6,10 @@ en:
           highlighted_processes:
             active_spaces: Conoce nuestras iniciativas
             see_all_spaces: Ver más
+    content_blocks:
+      enroll:
+        name: "Enroll"
+        title: "Apúntate a esto**"
+        description: "!Llegó el momento de despegar tu idea y lograr impacto en tu comunidad! <br> Presentamos la incubadora Redpública transforma"
+        button: "Postula"
+        button_link: "#"

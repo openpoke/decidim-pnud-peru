@@ -78,9 +78,6 @@ a.home__menu-element--link {
 }
 
 a.button.button__secondary {
-  text-transform: uppercase;
-  border-radius: 9999px 9999px 9999px 9999px;
-
   &::before {
     content: '';
     mask: url(images/flecha.svg) no-repeat center / contain;
@@ -161,6 +158,7 @@ section.content-block, section.home__section {
   }
 
 }
+
 .exclamation-marks {
   &:before {
     content: "";
@@ -181,3 +179,17 @@ section.content-block, section.home__section {
   }
 }
 
+section#enroll_section {
+  div > .header > .title > h2 {
+    &:before {
+      content: '';
+      background-image: url(images/megafono_extra.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      display: inline-block;
+      width: 64px;
+      height: 64px;
+    }
+  }
+}
