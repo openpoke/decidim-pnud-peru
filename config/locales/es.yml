@@ -13,3 +13,8 @@ en:
         description: "!Llegó el momento de despegar tu idea y lograr impacto en tu comunidad! <br> Presentamos la incubadora Redpública transforma"
         button: "Postula"
         button_link: "#"
+      welcome:
+        name: "Bienvenida"
+        description: "Somos una comunidad para crear en conjunto nuestras propuestas ciudadanas por el Perú que queremos hoy."
+        button: "¡Súmate tú también!"
+        button_link: "#"

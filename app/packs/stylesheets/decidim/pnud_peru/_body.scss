@@ -193,3 +193,12 @@ section#enroll_section {
     }
   }
 }
+
+section#call_to_join_section {
+  a.custom_button {
+    background-image: url(images/elipsis.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}

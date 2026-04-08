@@ -2,7 +2,7 @@
 
 module Decidim
   module ContentBlocks
-    class EnrollCell < Decidim::ViewModel
+    class WelcomeCell < Decidim::ViewModel
     end
   end
 end

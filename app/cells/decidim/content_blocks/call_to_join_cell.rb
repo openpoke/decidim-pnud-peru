@@ -2,7 +2,7 @@
 
 module Decidim
   module ContentBlocks
-    class EnrollCell < Decidim::ViewModel
+    class CallToJoinCell < Decidim::ViewModel
     end
   end
 end

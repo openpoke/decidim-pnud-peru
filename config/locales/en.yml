@@ -42,3 +42,14 @@ en:
         description: "!Llegó el momento de despegar tu idea y lograr impacto en tu comunidad! <br> Presentamos la incubadora Redpública transforma"
         button: "Postula"
         button_link: "#"
+      call_to_join:
+        name: "Call To Join"
+        title: "Tú y yo: haciendo Perú <3"
+        description: "Iniciativas a nivel nacional necesitan tu liderazgo e iniciativa."
+        button: "¡Súmate!"
+        button_link: "#"
+      welcome:
+        name: "Welcome"
+        description: "Somos una comunidad para crear en conjunto nuestras propuestas ciudadanas por el Perú que queremos hoy."
+        button: "¡Súmate tú también!"
+        button_link: "#"
