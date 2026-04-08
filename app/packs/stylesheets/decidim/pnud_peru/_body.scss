@@ -38,10 +38,6 @@ body {
   background: #5E95D6;
 }
 
-// h1 {
-//   font-family: 'monumentGroteskBold', 'menlo', sans-serif !important;
-// }
-
 main.home {
   background-image: url('images/comunidad_redpublica.png');
   background-repeat: no-repeat;
@@ -141,24 +137,6 @@ section.content-block, section.home__section {
   }
 }
 
-.redpublica-title {
-  @apply font-bold text-white;
-  font-size: 10em;
-
-  &:after {
-    content: "";
-    display: inline-block;
-    background-image: url(images/escarapela_blanca.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 64px;
-    height: 64px;
-    background-color: white;
-  }
-
-}
-
 .exclamation-marks {
   &:before {
     content: "";
@@ -181,15 +159,38 @@ section.content-block, section.home__section {
 
 section#enroll_section {
   div > .header > .title > h2 {
+    position: relative;
     &:before {
       content: '';
       background-image: url(images/megafono_extra.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
-      display: inline-block;
-      width: 64px;
-      height: 64px;
+      display: block;
+      width: 2em;
+      height: 2em;
+      position: absolute;
+      left: -3em;
+      top: 50%;
+      transform: translateY(-40%);
+
+      @media (max-width: 480px) {
+        width: 2em;
+        height: 2em;
+        left: -3em;
+      }
+
+      @media (max-width: 1600px) {
+        width: 4em;
+        height: 4em;
+        left: -4em;
+      }
+
+      @media (min-width: 1600px) {
+        width: 5em;
+        height: 5em;
+        left: -5.5em;
+      }
     }
   }
 }
