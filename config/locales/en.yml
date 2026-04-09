@@ -53,3 +53,5 @@ en:
         description: "Somos una comunidad para crear en conjunto nuestras propuestas ciudadanas por el Perú que queremos hoy."
         button: "¡Súmate tú también!"
         button_link: "#"
+      processes_list:
+        name: "Processes list"

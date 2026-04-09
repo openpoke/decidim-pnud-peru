@@ -17,3 +17,9 @@ Decidim.content_blocks.register(:homepage, :welcome) do |content_block|
   content_block.public_name_key = "decidim.content_blocks.welcome.name"
   content_block.default!
 end
+
+Decidim.content_blocks.register(:participatory_process_group_homepage, :processes_list) do |content_block|
+  content_block.cell = "decidim/content_blocks/processes_list"
+  content_block.public_name_key = "decidim.content_blocks.processes_list.name"
+  content_block.default!
+end

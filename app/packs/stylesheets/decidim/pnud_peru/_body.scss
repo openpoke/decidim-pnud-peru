@@ -113,30 +113,6 @@ section.content-block, section.home__section {
   }
 }
 
-.participatory-space__block-grid {
-  a[id^="participatory_process"] {
-    div.card__grid-text {
-      h3 {
-        background-color: black;
-        color: white;
-        border-radius: 9999px 9999px 9999px 9999px;
-
-        &::before {
-          content: '';
-          mask: url(images/flecha.svg) no-repeat center / contain;
-          background-color: white;
-          width: 24px;
-          height: 24px;
-          margin-right: 8px;
-        }
-      }
-      .card__grid-metadata {
-        display: none;
-      }
-    }
-  }
-}
-
 .exclamation-marks {
   &:before {
     content: "";
@@ -201,5 +177,19 @@ section#call_to_join_section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+  }
+}
+
+section#processes_list {
+  .content-block__body > .processes_list > .card > .card__header > h3 {
+    &:before {
+      content: '';
+      display: inline-block;
+      mask: url(images/flecha.svg) no-repeat center / contain;
+      background-color: white;
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
   }
 }
