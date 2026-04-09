@@ -6,13 +6,12 @@ module Decidim
       def participatory_processes
         id = params[:id]
         @process_group = Decidim::ParticipatoryProcessGroup.find(id)
-        participatory_processes = @process_group.participatory_processes.published
+        @process_group.participatory_processes.published
       end
 
       def resource_path(resource)
         resource_locator(resource).path
       end
-
 
       def process_image_url(process)
         process.attached_uploader(:hero_image).url
@@ -20,4 +19,3 @@ module Decidim
     end
   end
 end
-
