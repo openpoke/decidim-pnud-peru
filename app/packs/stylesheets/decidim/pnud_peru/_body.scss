@@ -1,48 +1,48 @@
 @font-face {
   font-family: 'menlo';
-  src: url('fonts/Menlo.ttc') format('truetype');
+  src: url('fonts/Menlo.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'monumentGroteskBlack';
-  src: url('fonts/MonumentGrotesk-Black.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'monumentGroteskMedium';
-  src: url('fonts/MonumentGrotesk-Medium.ttf') format('truetype');
+  font-family: 'spaceGroteskMedium';
+  src: url('fonts/SpaceGrotesk-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'monumentGroteskBold';
-  src: url('fonts/MonumentGrotesk-Bold.ttf') format('truetype');
+  font-family: 'spaceGroteskBold';
+  src: url('fonts/SpaceGrotesk-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'monumentGroteskRegular';
-  src: url('fonts/MonumentGrotesk-Mono.ttf') format('truetype');
+  font-family: 'spaceGroteskRegular';
+  src: url('fonts/SpaceGrotesk-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'monumentGroteskRegular', 'menlo', sans-serif !important;
-  background: #5E95D6;
+  font-family: 'spaceGroteskRegular', 'menlo', sans-serif !important;
 }
 
 main.home {
+  background-color: #5E95D6;
   background-image: url('images/comunidad_redpublica.png');
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 50% auto;
+  color: white;
+  h1, h2, h3, h4, h5, h6 {
+    color: rgb(2 2 3 / 1);
+  }
+  .editor-content {
+    color: white;
+  }
 
   @media (max-width: 481px) {
     background-size: 90% auto;
@@ -67,6 +67,11 @@ main.home {
       padding-bottom: 15em;
     }
   }
+
+  .activity__container, .card__grid-home, .card__list-list {
+    background-color: white;
+    padding: 1.5rem
+  }
 }
 
 a.home__menu-element--link {
@@ -78,8 +83,8 @@ a.button.button__secondary {
     content: '';
     mask: url(images/flecha.svg) no-repeat center / contain;
     background-color: white;
-    width: 24px;
-    height: 24px;
+    width: .7em;
+    height: .7em;
   }
 }
 
@@ -103,8 +108,8 @@ section.content-block, section.home__section {
       content: '';
       mask: url(images/flecha.svg) no-repeat center / contain;
       background-color: white;
-      width: 24px;
-      height: 24px;
+      width: 1em;
+      height: 1em;
     }
 
     svg {
@@ -118,8 +123,8 @@ section.content-block, section.home__section {
     content: "";
     display: inline-block;
     mask: url(images/exclamacion_izquierda.png) no-repeat center / contain;
-    width: 24px;
-    height: 24px;
+    width: 1em;
+    height: 1em;
     background-color: white;
   }
 
@@ -127,8 +132,8 @@ section.content-block, section.home__section {
     content: "";
     display: inline-block;
     mask: url(images/exclamacion_derecha.png) no-repeat center / contain;
-    width: 24px;
-    height: 24px;
+    width: 1em;
+    height: 1em;
     background-color: white;
   }
 }
