@@ -12,18 +12,17 @@
       </div>
     </div>
 
-    <div class="relative px-6 py-10 md:px-10 md:py-12 bg-no-repeat bg-bottom bg-right bg-[length:50%] md:bg-[length:33%]" style="background-image: url(<%= asset_pack_path("media/images/mapa.png") %>)">
+    <div class="relative text-black px-6 py-10 md:px-10 md:py-12 bg-no-repeat bg-bottom bg-right bg-[length:50%] md:bg-[length:33%]" style="background-image: url(<%= asset_pack_path("media/images/mapa.png") %>)">
       <p class="max-w-xl text-md md:text-lg leading-relaxed text-balance">
         <%= I18n.t('decidim.content_blocks.call_to_join.description') %>
       </p>
 
-      <a href="<%= I18n.t("decidim.content_blocks.call_to_join.button_link") %>"
+      <a href="<%= model.settings.button_url %>"
          class="custom_button inline-flex items-center gap-2 mt-6 px-6 py-3 text-black font-medium">
         <%= I18n.t("decidim.content_blocks.call_to_join.button") %>
       </a>
 
     </div>
-
   </div>
 </section>
 

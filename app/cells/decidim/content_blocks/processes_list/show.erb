@@ -11,7 +11,7 @@
           </div>
           <div class="grid grid-cols-2 overflow-hidden">
             <div class="card__body-image aspect-square md:aspect-[3/2] flex items-center justify-center">
-              <%= image_tag process_image_url(participatory_process), class: "card__image w-3/4" %>
+              <%= image_tag(process_image_url(participatory_process), class: "card__image w-3/4") if process_image_url(participatory_process) %>
             </div>
             <div class="card__body-content text-balance lg:text-xl overflow-hidden text-ellipsis p-6">
               <%= translated_attribute(participatory_process.short_description) %>
