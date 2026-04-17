@@ -53,7 +53,10 @@ en:
       processes_list:
         name: "Processes list"
       processes_list_settings_form:
+        title: Title
         title_text: "Title"
+        description: Description
         description_text: "Description"
+        subtitle: Subtitle
         subtitle_text: "Subtitle"
         button_text: "Button text"
