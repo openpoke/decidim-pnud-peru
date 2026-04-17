@@ -33,5 +33,13 @@ end
 Decidim.content_blocks.register(:participatory_process_group_homepage, :processes_list) do |content_block|
   content_block.cell = "decidim/content_blocks/processes_list"
   content_block.public_name_key = "decidim.content_blocks.processes_list.name"
+  content_block.settings_form_cell = "decidim/content_blocks/processes_list_settings_form"
   content_block.default!
+  content_block.settings do |settings|
+    settings.attribute :title_text, type: :string
+    settings.attribute :description_text, type: :string
+    settings.attribute :subtitle_text, type: :string
+    settings.attribute :button_text, type: :string
+    settings.attribute :button_url, type: :string
+  end
 end

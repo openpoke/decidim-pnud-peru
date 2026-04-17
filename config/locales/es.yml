@@ -18,3 +18,12 @@ en:
         button: "¡Súmate tú también!"
       processes_list:
         name: "Processes list"
+      processes_list_settings_form:
+        title: Título
+        title_text: "Incubadora: <br>Redpública Transforma"
+        description: Descripción
+        description_text: |-
+          ¡Llegó el momento de despegar tu idea y lograr impacto en tu comunidad! <br><br> Postula a la incubadora Redpública transforma.
+        subtitle: Subtítulo
+        subtitle_text: "Masterclasses de incubación:"
+        button_text: Revisa las bases

@@ -52,3 +52,8 @@ en:
         button: "¡Súmate tú también!"
       processes_list:
         name: "Processes list"
+      processes_list_settings_form:
+        title_text: "Title"
+        description_text: "Description"
+        subtitle_text: "Subtitle"
+        button_text: "Button text"
