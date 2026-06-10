@@ -1,0 +1,28 @@
+<section id="call_to_join_section" class="py-12">
+  <div class="max-w-xs md:max-w-2xl xl:max-w-5xl mx-auto bg-white overflow-hidden">
+    <div class="header bg-[#f5dd26ff] text-center py-6 relative">
+        <%= image_pack_tag "media/images/bandera.png", 
+          alt: "", 
+          class: "w-1/3 md:w-1/4 lg:w-32 h-auto object-contain absolute top-2 left-4 lg:left-10" %>
+
+      <div class="title flex items-center w-2/3 ml-auto mr-1 lg:m-auto lg:w-100 justify-right md:justify-center gap-3">
+        <h2 class="text-xl md:text-4xl font-bold text-black leading-tight">
+          <%= I18n.t('decidim.content_blocks.call_to_join.title') %>
+        </h2>
+      </div>
+    </div>
+
+    <div class="relative text-black px-6 py-10 md:px-10 md:py-12 bg-no-repeat bg-bottom bg-right bg-[length:50%] md:bg-[length:33%]" style="background-image: url(<%= asset_pack_path("media/images/mapa.png") %>)">
+      <p class="max-w-xl text-md md:text-lg leading-relaxed text-balance">
+        <%= I18n.t('decidim.content_blocks.call_to_join.description') %>
+      </p>
+
+      <a href="<%= model.settings.button_url %>"
+         class="custom_button inline-flex items-center gap-2 mt-6 px-6 py-3 text-black font-medium">
+        <%= I18n.t("decidim.content_blocks.call_to_join.button") %>
+      </a>
+
+    </div>
+  </div>
+</section>
+

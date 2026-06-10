@@ -1,0 +1,27 @@
+<section id="enroll_section" class="py-12">
+  <div class="max-w-xs md:max-w-2xl xl:max-w-5xl mx-auto bg-white overflow-hidden">
+    <div class="header bg-[#f46e61] text-center py-8">
+      <div class="title flex items-center justify-center gap-3">
+        <h2 class="text-xl md:text-4xl font-bold text-black leading-tight">
+          <%= I18n.t('decidim.content_blocks.enroll.title') %>
+        </h2>
+      </div>
+    </div>
+
+    <div class="relative px-6 py-10 md:px-10 md:py-12 text-black">
+      <p class="max-w-xl text-md md:text-lg leading-relaxed text-balance">
+        <%= I18n.t('decidim.content_blocks.enroll.description') %>
+      </p>
+
+      <a href="<%= model.settings.button_url %>"
+         class="button button__secondary inline-flex items-center gap-2 mt-6 px-6 py-3 bg-black text-white rounded-full font-medium uppercase">
+       <%= I18n.t("decidim.content_blocks.enroll.button") %>
+      </a>
+
+      <%= image_pack_tag "media/images/fondo_apuntate.png", 
+        alt: "",
+        class: "block absolute bottom-0 right-0 w-1/2 md:w-1/4 pointer-events-none" %>
+    </div>
+
+  </div>
+</section>

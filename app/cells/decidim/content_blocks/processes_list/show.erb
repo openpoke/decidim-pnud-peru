@@ -1,0 +1,43 @@
+<section id="processes_list" class="content-block overflow-x-hidden">
+  <div class="relative flex flex-col items-center gap-12 py-12">
+    <div class="header bg-[#f46e61] text-right md:text-center h-[150px] py-8 w-full max-w-[350px] md:max-w-[1000px] px-4 md:px-0">
+      <div class="title flex items-center justify-end md:justify-center gap-3">
+        <h2 class="text-xl text-left md:text-4xl font-extrabold font-['spaceGroteskBold'] text-white leading-tight pr-2 md:pr-0">
+          <%= decidim_sanitize_admin(translate_title.presence) || t("decidim.content_blocks.processes_list_settings_form.title_text") %>
+        </h2>
+      </div>
+    </div>
+
+    <div class="w-full max-w-[800px] px-4 md:px-0">
+      <div class="md:text-3xl font-extrabold">
+        <%= decidim_sanitize_admin(translate_description.presence) || t("decidim.content_blocks.processes_list_settings_form.description_text") %>
+      </div>
+
+      <a href="<%= model.settings.button_url %>"
+            class="button button__secondary inline-flex items-center gap-2 mt-6 px-6 py-3 w-fit bg-black md:text-3xl text-white rounded-full font-medium uppercase"><%= decidim_sanitize_admin(translate_button_text.presence) || t("decidim.content_blocks.processes_list_settings_form.button_text") %></a>
+    </div>
+  </div>
+
+
+  <div class="content-block__title">
+    <h2 class="h2 m-auto md:text-5xl !font-extrabold"><%= decidim_sanitize_admin(translate_subtitle.presence) || t("decidim.content_blocks.processes_list_settings_form.subtitle_text") %></h2>
+  </div>
+  <div class="content-block__body">
+    <div class="processes_list flex flex-col justify-center gap-6">
+      <% participatory_processes.each do |participatory_process| %>
+        <%= link_to resource_path(participatory_process), class: "card w-full max-w-xs sm:max-w-xl lg:max-w-3xl bg-white rounded-[44px] md:rounded-[30px] overflow-hidden m-auto aspect-square md:aspect-auto" do %>
+          <div class="card__header grid w-full items-center gap-2 px-6 py-3 bg-black text-white rounded-full font-medium">
+            <h3 class="h3"><%= translated_attribute(participatory_process.title) %></h3>
+          </div>
+          <div class="grid grid-cols-2 overflow-hidden">
+            <div class="card__body-image aspect-square md:aspect-[3/2] flex items-center justify-center">
+              <%= image_tag(process_image_url(participatory_process), class: "card__image w-3/4") if process_image_url(participatory_process) %>
+            </div>
+            <div class="card__body-content text-balance lg:text-xl overflow-hidden text-ellipsis p-6">
+              <%= translated_attribute(participatory_process.short_description) %>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+</section>

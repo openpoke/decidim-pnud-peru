@@ -1,0 +1,42 @@
+#processes_list {
+  background-color: #5E95D6;
+  max-width: 100%;
+}
+
+section#processes_list {
+  .header .title h2 {
+    position: relative;
+    &:before {
+      content: '';
+      background-image: url(images/megafono_extra.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      display: block;
+      width: 2em;
+      height: 2em;
+      position: absolute;
+      left: -3em;
+      top: 40%;
+      transform: translateY(-40%);
+
+      @media (max-width: 480px) {
+        width: 2em;
+        height: 2em;
+        left: -2.2em;
+      }
+
+      @media (max-width: 1600px) {
+        width: 4em;
+        height: 4em;
+        left: -4em;
+      }
+
+      @media (min-width: 1600px) {
+        width: 5em;
+        height: 5em;
+        left: -5.5em;
+      }
+    }
+  }
+}

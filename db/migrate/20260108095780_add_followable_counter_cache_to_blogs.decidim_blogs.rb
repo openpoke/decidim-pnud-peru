@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 # This migration comes from decidim_blogs (originally 20210310120514)
+# This file has been modified by `decidim upgrade:migrations` task on 2026-03-27 11:35:17 UTC
 class AddFollowableCounterCacheToBlogs < ActiveRecord::Migration[5.2]
   def change
     add_column :decidim_blogs_posts, :follows_count, :integer, null: false, default: 0, index: true

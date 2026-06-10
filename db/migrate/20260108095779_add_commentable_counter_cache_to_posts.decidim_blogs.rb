@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 # This migration comes from decidim_blogs (originally 20200827153709)
+# This file has been modified by `decidim upgrade:migrations` task on 2026-03-27 11:35:17 UTC
 class AddCommentableCounterCacheToPosts < ActiveRecord::Migration[5.2]
   def change
     add_column :decidim_blogs_posts, :comments_count, :integer, null: false, default: 0, index: true

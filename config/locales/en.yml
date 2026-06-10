@@ -28,4 +28,35 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  decidim:
+    participatory_processes:
+      pages:
+        home:
+          highlighted_processes:
+            active_spaces: Meet our initiatives
+            see_all_spaces: See more
+    content_blocks:
+      enroll:
+        name: "Enroll"
+        title: "Apúntate a esto**"
+        description: "!Llegó el momento de despegar tu idea y lograr impacto en tu comunidad! <br> Presentamos la incubadora Redpública transforma"
+        button: "Postula"
+      call_to_join:
+        name: "Call To Join"
+        title: "Tú y yo: haciendo Perú <3"
+        description: "Iniciativas a nivel nacional necesitan tu liderazgo e iniciativa."
+        button: "¡Súmate!"
+      welcome:
+        name: "Welcome"
+        description: "Somos una comunidad para crear en conjunto nuestras propuestas ciudadanas por el Perú que queremos hoy."
+        button: "¡Súmate tú también!"
+      processes_list:
+        name: "Processes list"
+      processes_list_settings_form:
+        title: Title
+        title_text: "Title"
+        description: Description
+        description_text: "Description"
+        subtitle: Subtitle
+        subtitle_text: "Subtitle"
+        button_text: "Button text"

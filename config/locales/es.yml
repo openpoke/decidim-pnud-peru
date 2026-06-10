@@ -1,0 +1,29 @@
+en:
+  decidim:
+    participatory_processes:
+      pages:
+        home:
+          highlighted_processes:
+            active_spaces: Conoce nuestras iniciativas
+            see_all_spaces: Ver más
+    content_blocks:
+      enroll:
+        name: "Enroll"
+        title: "Apúntate a esto**"
+        description: "!Llegó el momento de despegar tu idea y lograr impacto en tu comunidad! <br> Presentamos la incubadora Redpública transforma"
+        button: "Postula"
+      welcome:
+        name: "Bienvenida"
+        description: "Somos una comunidad para crear en conjunto nuestras propuestas ciudadanas por el Perú que queremos hoy."
+        button: "¡Súmate tú también!"
+      processes_list:
+        name: "Processes list"
+      processes_list_settings_form:
+        title: Título
+        title_text: "Incubadora: <br>Redpública Transforma"
+        description: Descripción
+        description_text: |-
+          ¡Llegó el momento de despegar tu idea y lograr impacto en tu comunidad! <br><br> Postula a la incubadora Redpública transforma.
+        subtitle: Subtítulo
+        subtitle_text: "Masterclasses de incubación:"
+        button_text: Revisa las bases

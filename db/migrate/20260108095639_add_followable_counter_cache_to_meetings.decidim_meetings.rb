@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 # This migration comes from decidim_meetings (originally 20210310120731)
+# This file has been modified by `decidim upgrade:migrations` task on 2026-03-27 11:35:17 UTC
 class AddFollowableCounterCacheToMeetings < ActiveRecord::Migration[5.2]
   class Meeting < ApplicationRecord
     self.table_name = :decidim_meetings_meetings

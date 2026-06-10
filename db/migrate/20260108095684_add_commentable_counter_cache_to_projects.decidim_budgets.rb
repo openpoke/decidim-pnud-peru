@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 # This migration comes from decidim_budgets (originally 20200827154129)
+# This file has been modified by `decidim upgrade:migrations` task on 2026-03-27 11:35:17 UTC
 class AddCommentableCounterCacheToProjects < ActiveRecord::Migration[5.2]
   def change
     add_column :decidim_budgets_projects, :comments_count, :integer, null: false, default: 0, index: true

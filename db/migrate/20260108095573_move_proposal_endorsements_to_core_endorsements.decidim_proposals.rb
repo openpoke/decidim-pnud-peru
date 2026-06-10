@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 # This migration comes from decidim_proposals (originally 20200120215928)
+# This file has been modified by `decidim upgrade:migrations` task on 2026-03-27 11:35:17 UTC
 # This migration must be executed after CreateDecidimEndorsements migration in decidim-core.
 class MoveProposalEndorsementsToCoreEndorsements < ActiveRecord::Migration[5.2]
   class ProposalEndorsement < ApplicationRecord
