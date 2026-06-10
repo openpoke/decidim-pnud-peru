@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/openpoke/decidim-module-pokecode.git
-  revision: c693a58f36d67807070f217af22fb47c9b39f444
+  revision: 21ec907d351446f084994d2a640b40d8bc6ecdfa
   branch: main
   specs:
     decidim-pokecode (0.3.1)
@@ -30,7 +30,7 @@ GIT
 
 GIT
   remote: https://github.com/openpoke/decidim-module-term_customizer.git
-  revision: 493dafb08208e7256e755a579cf724dda627d31d
+  revision: 41b6104f615fd7f609b406f62c6893f52a9f5804
   branch: main
   specs:
     decidim-term_customizer (0.31)
